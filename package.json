@@ -1,0 +1,22 @@
+{
+  "name": "helpdesk-pro-vv",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "cypress:open": "cypress open"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.0.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.4",
+    "vite": "^7.1.10"
+  },
+  "devDependencies": {
+    "cypress": "13.17.0"
+  }
+}

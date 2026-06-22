@@ -1,0 +1,50 @@
+# dependencies
+node_modules/
+
+# production
+dist/
+build/
+
+# logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# coverage
+coverage/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# cache
+.cache/
+.parcel-cache/
+.vite/
+
+# temporary
+tmp/
+temp/
+
+# optional lock files (remova se quiser versionar)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
