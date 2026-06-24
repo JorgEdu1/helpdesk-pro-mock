@@ -1,55 +1,58 @@
-# HelpDesk Pro
+# HelpDesk Pro Mock
 
-Protótipo web acadêmico para atividades de Verificação e Validação. A aplicação implementa cadastro de cliente, login, dashboard, abertura de chamados, listagem com filtro/paginação e tela de detalhes do ticket.
+Protótipo acadêmico em React + Vite para atividades de Verificação e Validação de Software. A aplicação simula um help desk com cadastro de clientes, autenticação, abertura e acompanhamento de chamados, fila global de analista, comentários, atribuição de atendimento, resolução, fechamento e notificações internas.
+
+O projeto não usa backend nem banco de dados real. Todos os dados são persistidos no `localStorage` do navegador.
 
 ## Tecnologias
 
 - React
 - Vite
 - JavaScript
-- CSS simples
+- CSS
 - localStorage
 - Cypress
 
-## Como executar
-
-Instale as dependências:
+## Como instalar
 
 ```bash
 npm install
 ```
 
-Inicie o servidor de desenvolvimento:
+## Como executar
 
 ```bash
 npm run dev
 ```
 
-Acesse a URL exibida pelo Vite, normalmente:
+Acesse a URL exibida pelo Vite. Normalmente:
 
 ```text
 http://localhost:5173
 ```
 
-## Usuário mockado
+## Usuários mockados
+
+Cliente:
 
 ```text
 E-mail: cliente@teste.com
 Senha: 123456
 ```
 
-## Testes automatizados
+Analista:
 
-Com o servidor de desenvolvimento em execução, abra o Cypress:
+```text
+E-mail: analista@teste.com
+Senha: 123456
+```
+
+## Como rodar Cypress
+
+Com o servidor de desenvolvimento em execução:
 
 ```bash
 npx cypress open
 ```
 
-O projeto possui 5 cenários automatizados:
-
-- Cadastro válido
-- Login válido
-- Criação de Ticket
-- Filtragem de Tickets
-- Logout
+A suíte automatizada possui cenários para cadastro, login de cliente, login de analista, criação e listagem de tickets, atribuição de atendimento e fechamento pelo cliente.
